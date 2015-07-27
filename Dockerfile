@@ -6,8 +6,7 @@ RUN java -jar BuildTools.jar && \
     mkdir -p /usr/local/lib/minecraft && \
     cp /tmp/spigot-*.jar /usr/local/lib/minecraft/spigot.jar && \
     cp /tmp/craftbukkit-*.jar /usr/local/lib/minecraft/craftbukkit.jar && \
-    mkdir -p /minecraft && \
-    echo "eula=true" > /minecraft/eula.txt
+    mkdir -p /minecraft
 VOLUME /minecraft
 EXPOSE 25565
 WORKDIR /minecraft
